@@ -1,0 +1,45 @@
+.card {
+    border-radius: $border-radius-big;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px $color-grey-primary solid;
+
+    .card__image {
+        width: 100%;
+        height: 28rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card__description {
+        padding: 1.5rem 3rem;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card__heading {
+        color: $color-green-dark;
+        margin-bottom: 2rem;
+    }
+
+    .card__info { 
+        display: flex;
+
+        span {
+            color: $color-grey-secondary;
+            font-size: 1.4rem;
+        }
+
+        & > *:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}

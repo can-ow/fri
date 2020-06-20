@@ -1,0 +1,18 @@
+.slideshow-4main {
+    position: relative;
+
+    .slideshow__slides {
+        display: flex;
+
+        & > *:not(:last-child) {
+            margin-right: $column-gap;
+        }
+    }
+
+    .slideshow__item {
+        flex: 1;
+        max-width: 25%;
+        display: flex;
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,24 @@
+.main-heading {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    color: $color-green-dark;
+    
+    .main-heading__text {
+        margin-right: auto;
+    }
+
+    .main-heading__link:link,
+    .main-heading__link:visited {
+        color: inherit;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .main-heading__icon {
+        margin-left: 2rem;
+        transform: translateY(-2px);
+    }
+}

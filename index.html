@@ -13,7 +13,7 @@
     <nav class="navbar">
         Navbar
     </nav>
-    <header class="hero">
+    <div class="hero">
         <div class="bulletin">
             <div class="gallery">
                 <div class="gallery__content">
@@ -41,7 +41,7 @@
             </div>
             <div class="menu">
                 <div class="menu__header">
-                    <h3>GÜNÜN MENÜSÜ</h3>
+                    <span>GÜNÜN MENÜSÜ</span>
                 </div>
                 <div class="menu__item menu__item-1">
                     <div class="menu__img-container">
@@ -70,34 +70,142 @@
             </div>
         </div>
         <div class="sections">
-            <div class="sections__gallery-item sections__gallery-item--1">
-                <a href="#" class="sections__link link"><h4>Borek</h4></a>
+            <div class="sections__slides">
+                <a href="#" class="sections__gallery-item sections__gallery-item--1 link">
+                    <h4 class="sections__link">Borek</h4>
+                </a>
+                <a href="#" class="sections__gallery-item sections__gallery-item--2 link">
+                    <h4 class="sections__link">Atıstırmalık</h4>
+                </a>
+                <a href="#" class="sections__gallery-item sections__gallery-item--3 link">
+                    <h4 class="sections__link">Bakliyat</h4>
+                </a>
+                <a href="#" class="sections__gallery-item sections__gallery-item--4 link">
+                    <h4 class="sections__link">Zeytinyagli</h4>
+                </a>
+                <a href="#" class="sections__gallery-item sections__gallery-item--5 link">
+                    <h4 class="sections__link">Tavuk</h4>
+                </a>
+                <a href="#" class="sections__gallery-item sections__gallery-item--6 link">
+                    <h4 class="sections__link">Et</h4>
+                </a>
             </div>
-            <div class="sections__gallery-item sections__gallery-item--2">
-                
+            <div class="sections__options">
+                <button class="slide-btn sections__btn-left sections__btn">
+                    <svg class="arr-icon-slide">
+                        <use xlink:href="images/sprite.svg#icon-arrow-left2"></use>
+                    </svg>
+                </button>
+                <button class="slide-btn sections__btn-right sections__btn">
+                    <svg class="arr-icon-slide">
+                        <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                    </svg>
+                </button>
             </div>
-            <div class="sections__gallery-item sections__gallery-item--3">
-                
-            </div>
-            <div class="sections__gallery-item sections__gallery-item--4">
-                
-            </div>
-            <div class="sections__gallery-item sections__gallery-item--5">
-                
-            </div>
-            <div class="sections__gallery-item sections__gallery-item--6">
-                
-            </div>
-            <div class="section__btn-left section__btn">
-
-            </div>
-            <div class="section__btn-left section__btn">
-                
-            </div>  
         </div>
-    </header>
-    <div class="new-recipes">New Recipes</div>
-    <div class="video-gallery">Video Gallery</div>
+    </div>
+    <div class="new-recipes">
+        <div class="main-heading new-recipes__heading">
+            <h2 class="main-heading__text">En Yeni Tarifler</h2>
+            <a href="#" class="main-heading__link">
+                <span>Tümünü Listele</span>
+                <svg class="arr-icon-link main-heading__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="slideshow-4main new-recipes__slideshow">
+            <div class="slideshow__slides">
+                <div class="slideshow__item slidehow__item--1">
+                    <card class="card card--main">
+                        <div class="card__image">
+                            <img src="/images/card-photo-1.png" alt="hamburger">
+                        </div>
+                        <div class="card__description">
+                            <h3 class="card__heading">Sebzeli Parpardelle</h3>
+                            <div class="card__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+                <div class="slideshow__item slidehow__item--2">
+                    <card class="card card--main">
+                        <div class="card__image">
+                            <img src="/images/picture-small-1.jpg" alt="hamburger">
+                        </div>
+                        <div class="card__description">
+                            <h3 class="card__heading">Sebzeli Parpardelle Sebzeli Parpardelle</h3>
+                            <div class="card__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+                <div class="slideshow__item slidehow__item--3">
+                    <card class="card card--main">
+                        <div class="card__image">
+                            <img src="/images/card-photo-2.png" alt="et">
+                        </div>
+                        <div class="card__description">
+                            <h3 class="card__heading">Bildigin Et</h3>
+                            <div class="card__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+                <div class="slideshow__item slidehow__item--4">
+                    <card class="card card--main">
+                        <div class="card__image">
+                            <img src="/images/card-photo-3.png" alt="misir">
+                        </div>
+                        <div class="card__description">
+                            <h3 class="card__heading">Nefiss..</h3>
+                            <div class="card__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+            </div>
+            <div class="slideshow__options">
+                <button class="slide-btn slide-btn__btn-left new-recipes__btn">
+                    <svg class="arr-icon-slide">
+                        <use xlink:href="images/sprite.svg#icon-arrow-left2"></use>
+                    </svg>
+                </button>
+                <button class="slide-btn slide-btn__btn-right new-recipes__btn">
+                    <svg class="arr-icon-slide">
+                        <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="video-gallery">
+        <div class="main-heading video-gallery__heading">
+            <h2 class="main-heading__text">fri YouTube</h2>
+            <a href="#" class="main-heading__link">
+                <span>Tümünü Listele</span>
+                <svg class="arr-icon-link main-heading__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="video-container">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0" frameborder="0"></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/xXzT7cKuahM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
     <div class="on-mobile">On Mobile</div>
     <div class="fastest">Fastest Recipes</div>
     <div class="tips">tips</div>

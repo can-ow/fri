@@ -6,6 +6,52 @@
     padding: 1rem 3rem;
 }
 
+.slide-btn {
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-green-dark;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+
+    button {
+        text-align: center;
+        flex: 1;
+    }
+
+    &__btn-left {
+        margin: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 35%;
+    }
+
+    &__btn-right {
+        position: absolute;
+        transform: translate(50%, -50%);
+        top: 35%;
+        right: 0;
+    }
+
+    .arr-icon-slide {
+        fill: $color-white;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.arr-icon-link {
+    fill: $color-green-dark;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .radio-btn {
     
 }
