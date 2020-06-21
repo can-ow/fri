@@ -1,0 +1,37 @@
+.search {
+    display: flex;
+    border-radius: 4rem;
+    overflow: hidden;
+    flex: 0 0 30%;
+
+    &__input {
+        border: none;
+        padding: 1.5rem;
+        width: 100%;
+        background-color: $color-grey-primary;
+        font-size: 1.2rem;
+        margin-right: -3.25rem;
+    }
+
+    .search__btn {
+        background-color: inherit;
+        border: none;
+    
+        &:focus,
+        &:visited {
+            outline: none;
+        }
+        
+        .search__icon {
+            fill: $color-green-dark;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &:focus,
+    &:visited {
+        color: inherit;
+        outline: none;
+    }
+}

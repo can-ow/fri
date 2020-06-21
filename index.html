@@ -11,7 +11,34 @@
 </head>
 <body>
     <nav class="navbar">
-        Navbar
+        <span>navbar btn</span>
+        <a href="#" class="navbar__logo navbar-link"><h1>fri</h1></a>
+        <div class="navbar__link-container">
+            <a href="#" class="navbar-link navbar__recipes-link"><h4>Tarifler</h4></a>
+            <a href="#" class="navbar-link navbar__menu-link"><h4>Menüler</h4></a>
+            <a href="#" class="navbar-link navbar__tips-link"><h4>Mutfaktan İpuçları</h4></a>
+        </div>
+        <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Tarif Ara">
+            <button class="search__btn">
+                <svg class="search__icon">
+                    <use xlink:href="/images/sprite.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
+        <div class="social__item user">
+            <a href="#">
+                <img src="/images/user-portrait.jpg" alt="user photo">
+            </a>
+        </div>
+        <div class="social__item shopping">
+            <svg class="shopping__logo">
+                <use xlink:href="images/sprite.svg#icon-shopping-bag"></use>
+            </svg>
+            <div class="shopping__notification">
+                <span>8</span>
+            </div>
+        </div>
     </nav>
     <div class="hero">
         <div class="bulletin">
@@ -45,25 +72,25 @@
                 </div>
                 <div class="menu__item menu__item-1">
                     <div class="menu__img-container">
-                        <img src="/images/picture-small-1.jpg" alt="image-1">
+                        <img src="/images/card-photo-4.jpg" alt="image-1">
                     </div>
                     <h4 class="menu__text">Patlıcanlı, Kabaklı pizza</h4>
                 </div>
                 <div class="menu__item menu__item-2">
                     <div class="menu__img-container">
-                        <img src="/images/picture-small-1.jpg" alt="image-2">
+                        <img src="/images/card-photo-4.jpg" alt="image-2">
                     </div>
                     <h4 class="menu__text">Hamburger</h4>
                 </div>
                 <div class="menu__item menu__item-3">
                     <div class="menu__img-container">
-                        <img src="/images/picture-small-1.jpg" alt="image-3">
+                        <img src="/images/card-photo-4.jpg" alt="image-3">
                     </div>
                     <h4 class="menu__text">Bir hamburger daha</h4>
                 </div>
                 <div class="menu__item menu__item-4">
                     <div class="menu__img-container">
-                        <img src="/images/picture-small-1.jpg" alt="image-4">
+                        <img src="/images/card-photo-4.jpg" alt="image-4">
                     </div>
                     <h4 class="menu__text">Bingo!</h4>
                 </div>
@@ -133,7 +160,7 @@
                 <div class="slideshow__item slidehow__item--2">
                     <card class="card card--main">
                         <div class="card__image">
-                            <img src="/images/picture-small-1.jpg" alt="hamburger">
+                            <img src="/images/card-photo-4.jpg" alt="hamburger">
                         </div>
                         <div class="card__description">
                             <h3 class="card__heading">Sebzeli Parpardelle Sebzeli Parpardelle</h3>
@@ -208,8 +235,32 @@
     </div>
     <div class="on-mobile">On Mobile</div>
     <div class="fastest">Fastest Recipes</div>
-    <div class="tips">tips</div>
-    <footer class="footer">Footer</footer>
+    <div class="tips">
+        <div class="main-heading tips__heading">
+            <h2 class="main-heading__text">Mutfaktan İpuçları</h2>
+            <a href="#" class="main-heading__link">
+                <span>Tümünü Listele</span>
+                <svg class="arr-icon-link main-heading__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="tip-container">
+            <div class="tip tip--1">
+                <h3 class="tip__description">İftar Menünüzün yıldızı olacak hurmalı kabak tatlısı</h3>
+            </div>
+            <div class="tip tip--2">
+                <h3 class="tip__description">Kiymali Pidenin Püf Noktasını Şeflerimiz Açıkladı</h3>
+            </div>
+            <div class="tip tip--3">
+                <h3 class="tip__description">Siz de Evde Kendi Ekmeğinizi Yapıyor Musunuz?</h3>
+            </div>
+            <div class="tip tip--4">
+                <h3 class="tip__description">En Ekonomik Tatlı: Limonlu Su Muhallebisi Tarifi</h3>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">footer</footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

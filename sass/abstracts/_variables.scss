@@ -1,12 +1,14 @@
 //COLORS
 $color-white: white;
 
-$color-grey-primary: 	#d9d4d0;
+$color-grey-primary: #f4f3f0;
 $color-grey-secondary: grey;
 
 $color-green-dark: #064545;
 
 $color-yellow:#d6e666;
+
+$color-blue:	#bae4ee;
 
 //TYPOGRAPHY
 $header-font-family: sans-serif;
@@ -19,4 +21,4 @@ $column-gap: 3rem;
 $border-radius-big: 1.5rem;
 $border-radius-small: 0.4rem;
 $border-radius-medium: 0.7rem;
-$border-bottom: 1px $color-grey-primary solid;
+$border-bottom: 1px $color-grey-secondary solid;

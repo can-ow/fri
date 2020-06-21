@@ -1,3 +1,79 @@
 .navbar {
     height: 9rem;
+    color: $color-green-dark;
+
+    display: flex;
+    justify-content: flex-start;
+
+    .navbar__link-container {
+        display: flex;
+
+        margin-right: auto;
+    }
+
+    .navbar-link {
+        
+        padding-right: 3rem;
+        padding-left: 3rem;
+
+        &:link,
+        &:visited,
+        &:focus {
+            text-decoration: none;
+            outline: none;
+            color: inherit;
+        }
+    }
+
+    .social__item {
+        height: 5rem;
+        width: 5rem;
+        margin-left: 3rem;
+        border-radius: 50%;
+        
+    }
+
+    .user {
+        overflow: hidden;
+
+        img {
+            height: 150%;
+            object-fit: cover;
+        }
+    }
+
+    .shopping {
+        background-color: $color-blue;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .shopping__logo {
+        flex: 1;
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-green-dark;
+    }
+
+    .shopping__notification {
+        height: 2.3rem;
+        width: 2.3rem;
+        background-color: orange;
+        font-size: 1rem;
+        font-weight: 700;
+        color: $color-white;
+        border-radius: 100px;
+        padding: 0.25rem;
+        border: .3rem solid white;
+        position: absolute;
+        top: -.5rem;
+        right: -.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
