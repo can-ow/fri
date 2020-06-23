@@ -11,7 +11,7 @@
         align-items: stretch;
 
         .gallery {
-            background-image: linear-gradient(to right, rgba(grey, 0.8),rgba(grey, 0.5)),
+            background-image: linear-gradient(to right, rgba(grey, 0.5),rgba(grey, 0.3)),
                 url(/images/picture-big-1.png);
             background-size: cover;
             border-radius: $border-radius-big;

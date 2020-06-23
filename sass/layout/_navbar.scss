@@ -1,18 +1,19 @@
 .navbar {
+    margin-left: 2rem;
+    margin-right: 5rem;
     height: 9rem;
     color: $color-green-dark;
 
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 
     .navbar__link-container {
         display: flex;
-
         margin-right: auto;
     }
 
     .navbar-link {
-        
         padding-right: 3rem;
         padding-left: 3rem;
 
@@ -23,6 +24,10 @@
             outline: none;
             color: inherit;
         }
+    }
+
+    .navbar__search-form {
+        flex: 0 0 25%;
     }
 
     .social__item {
@@ -45,10 +50,15 @@
     .shopping {
         background-color: $color-blue;
         position: relative;
-
+        
         display: flex;
         align-items: center;
-        text-align: center;
+
+        a {
+            flex: 1;
+            display: flex;
+            text-align: center;
+        }
     }
 
     .shopping__logo {

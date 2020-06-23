@@ -11,20 +11,37 @@
 </head>
 <body>
     <nav class="navbar">
-        <span>navbar btn</span>
+        <div class="slide-in">
+            <div class="slide-in__activator">
+                <input type="checkbox" class="slide-in__checkbox" id="slide-in-toggle">
+    
+                <label for="slide-in-toggle" class="slide-in__icon-container">
+                    <span class="slide-in__icon">&nbsp;</span>
+                </label>
+            </div>
+
+            <ul class="slide-in__list">
+                <li class="slide-in__item slide-in__item--1"><a href="#" class="slide-in__link">slide-in1</a></li>
+                <li class="slide-in__item slide-in__item--2"><a href="#" class="slide-in__link">slide-in2</a></li>
+                <li class="slide-in__item slide-in__item--3"><a href="#" class="slide-in__link">slide-in3</a></li>
+                <li class="slide-in__item slide-in__item--4"><a href="#" class="slide-in__link">slide-in4</a></li>
+            </ul>
+        </div>
         <a href="#" class="navbar__logo navbar-link"><h1>fri</h1></a>
         <div class="navbar__link-container">
             <a href="#" class="navbar-link navbar__recipes-link"><h4>Tarifler</h4></a>
             <a href="#" class="navbar-link navbar__menu-link"><h4>Menüler</h4></a>
             <a href="#" class="navbar-link navbar__tips-link"><h4>Mutfaktan İpuçları</h4></a>
         </div>
-        <form action="#" class="search">
-            <input type="text" class="search__input" placeholder="Tarif Ara">
-            <button class="search__btn">
-                <svg class="search__icon">
-                    <use xlink:href="/images/sprite.svg#icon-search"></use>
-                </svg>
-            </button>
+        <form action="#" class="navbar__search-form">
+            <div class="form-group search">
+                <input type="text" class="search__input" placeholder="Tarif Ara">
+                <button class="search__btn">
+                    <svg class="search__icon">
+                        <use xlink:href="/images/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </div>
         </form>
         <div class="social__item user">
             <a href="#">
@@ -32,12 +49,14 @@
             </a>
         </div>
         <div class="social__item shopping">
-            <svg class="shopping__logo">
-                <use xlink:href="images/sprite.svg#icon-shopping-bag"></use>
-            </svg>
-            <div class="shopping__notification">
-                <span>8</span>
-            </div>
+            <a href="#" class="shopping-link">
+                <svg class="shopping__logo">
+                    <use xlink:href="images/sprite.svg#icon-shopping-bag"></use>
+                </svg>
+                <div class="shopping__notification">
+                    <span>8</span>
+                </div>
+            </a>
         </div>
     </nav>
     <div class="hero">
@@ -131,68 +150,68 @@
             </div>
         </div>
     </div>
-    <div class="new-recipes">
-        <div class="main-heading new-recipes__heading">
-            <h2 class="main-heading__text">En Yeni Tarifler</h2>
-            <a href="#" class="main-heading__link">
+    <div class="new-recipes card-carousel">
+        <div class="main-heading card-carousel__heading">
+            <h2 class="main-heading__text new-recipes__heading">En Yeni Tarifler</h2>
+            <a href="#" class="main-heading__link new-recipes__link">
                 <span>Tümünü Listele</span>
                 <svg class="arr-icon-link main-heading__icon">
                     <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
                 </svg>
             </a>
         </div>
-        <div class="slideshow-4main new-recipes__slideshow">
+        <div class="slideshow-4main card-carousel__slideshow new-recipes__slideshow">
             <div class="slideshow__slides">
-                <div class="slideshow__item slidehow__item--1">
-                    <card class="card card--main">
+                <div class="slideshow__item slidehow__item--1 new-recipes__slide--1">
+                    <card class="card card--main new-recipes__card--1">
                         <div class="card__image">
                             <img src="/images/card-photo-1.png" alt="hamburger">
                         </div>
-                        <div class="card__description">
-                            <h3 class="card__heading">Sebzeli Parpardelle</h3>
-                            <div class="card__info">
+                        <div class="card__description card-1__description">
+                            <h3 class="card__heading card-1__heading">Sebzeli Parpardelle</h3>
+                            <div class="card__info card-1__info">
                                 <span>25-30dk</span>
                                 <span>Orta</span>
                             </div>
                         </div>
                     </card>
                 </div>
-                <div class="slideshow__item slidehow__item--2">
-                    <card class="card card--main">
+                <div class="slideshow__item slidehow__item--2 new-recipes__slide--2">
+                    <card class="card card--main new-recipes__card--2">
                         <div class="card__image">
                             <img src="/images/card-photo-4.jpg" alt="hamburger">
                         </div>
-                        <div class="card__description">
-                            <h3 class="card__heading">Sebzeli Parpardelle Sebzeli Parpardelle</h3>
-                            <div class="card__info">
+                        <div class="card__description card-2__description">
+                            <h3 class="card__heading card-2__heading">Sebzeli Parpardelle Sebzeli Parpardelle</h3>
+                            <div class="card__info card-2__info">
                                 <span>25-30dk</span>
                                 <span>Orta</span>
                             </div>
                         </div>
                     </card>
                 </div>
-                <div class="slideshow__item slidehow__item--3">
-                    <card class="card card--main">
+                <div class="slideshow__item slidehow__item--3 new-recipes__slide--3">
+                    <card class="card card--main new-recipes__card--3">
                         <div class="card__image">
                             <img src="/images/card-photo-2.png" alt="et">
                         </div>
-                        <div class="card__description">
-                            <h3 class="card__heading">Bildigin Et</h3>
-                            <div class="card__info">
+                        <div class="card__description card-3__description">
+                            <h3 class="card__heading card-3__heading">Bildigin Et</h3>
+                            <div class="card__info card-3__info">
                                 <span>25-30dk</span>
                                 <span>Orta</span>
                             </div>
                         </div>
                     </card>
                 </div>
-                <div class="slideshow__item slidehow__item--4">
-                    <card class="card card--main">
+                <div class="slideshow__item slidehow__item--4 new-recipes__slide--4">
+                    <card class="card card--main new-recipes__card--4">
                         <div class="card__image">
                             <img src="/images/card-photo-3.png" alt="misir">
                         </div>
-                        <div class="card__description">
-                            <h3 class="card__heading">Nefiss..</h3>
-                            <div class="card__info">
+                        <div class="card__description card-4__description">
+                            <h3 class="card__heading card-4__heading">Nefiss..</h3>
+                            <div class="card__info card-4__info">
                                 <span>25-30dk</span>
                                 <span>Orta</span>
                             </div>
@@ -201,12 +220,12 @@
                 </div>
             </div>
             <div class="slideshow__options">
-                <button class="slide-btn slide-btn__btn-left new-recipes__btn">
+                <button class="slide-btn slide-btn__btn-left card-carousel__btn">
                     <svg class="arr-icon-slide">
                         <use xlink:href="images/sprite.svg#icon-arrow-left2"></use>
                     </svg>
                 </button>
-                <button class="slide-btn slide-btn__btn-right new-recipes__btn">
+                <button class="slide-btn slide-btn__btn-right card-carousel__btn">
                     <svg class="arr-icon-slide">
                         <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
                     </svg>
@@ -234,7 +253,89 @@
         </div>
     </div>
     <div class="on-mobile">On Mobile</div>
-    <div class="fastest">Fastest Recipes</div>
+    <div class="fastest card-carousel">
+        <div class="main-heading card-carousel__heading">
+            <h2 class="main-heading__text fastest__heading">Bi Çırpıda</h2>
+            <a href="#" class="main-heading__link fastest__link">
+                <span>Tümünü Listele</span>
+                <svg class="arr-icon-link main-heading__icon">
+                    <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="slideshow-4main card-carousel__slideshow fastest__slideshow">
+            <div class="slideshow__slides">
+                <div class="slideshow__item slidehow__item--1 fastest__slide--1">
+                    <card class="card card--main fastest__card--1">
+                        <div class="card__image">
+                            <img src="/images/card-photo-1.png" alt="hamburger">
+                        </div>
+                        <div class="card__description card-1__description">
+                            <h3 class="card__heading card-1__heading">Sebzeli Parpardelle</h3>
+                            <div class="card__info card-1__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+                <div class="slideshow__item slidehow__item--2 fastest__slide--2">
+                    <card class="card card--main fastest__card--2">
+                        <div class="card__image">
+                            <img src="/images/card-photo-4.jpg" alt="hamburger">
+                        </div>
+                        <div class="card__description card-2__description">
+                            <h3 class="card__heading card-2__heading">Sebzeli Parpardelle Sebzeli Parpardelle</h3>
+                            <div class="card__info card-2__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+                <div class="slideshow__item slidehow__item--3 fastest__slide--3">
+                    <card class="card card--main fastest__card--3">
+                        <div class="card__image">
+                            <img src="/images/card-photo-2.png" alt="et">
+                        </div>
+                        <div class="card__description card-3__description">
+                            <h3 class="card__heading card-3__heading">Bildigin Et</h3>
+                            <div class="card__info card-3__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+                <div class="slideshow__item slidehow__item--4 fastest__slide--4">
+                    <card class="card card--main fastest__card--4">
+                        <div class="card__image">
+                            <img src="/images/card-photo-3.png" alt="misir">
+                        </div>
+                        <div class="card__description card-4__description">
+                            <h3 class="card__heading card-4__heading">Nefiss..</h3>
+                            <div class="card__info card-4__info">
+                                <span>25-30dk</span>
+                                <span>Orta</span>
+                            </div>
+                        </div>
+                    </card>
+                </div>
+            </div>
+            <div class="slideshow__options">
+                <button class="slide-btn slide-btn__btn-left card-carousel__btn">
+                    <svg class="arr-icon-slide">
+                        <use xlink:href="images/sprite.svg#icon-arrow-left2"></use>
+                    </svg>
+                </button>
+                <button class="slide-btn slide-btn__btn-right card-carousel__btn">
+                    <svg class="arr-icon-slide">
+                        <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="tips">
         <div class="main-heading tips__heading">
             <h2 class="main-heading__text">Mutfaktan İpuçları</h2>
@@ -260,7 +361,51 @@
             </div>
         </div>
     </div>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+        <div class="header-holder">
+            <div class="header">
+                <h2 class="header__heading">fri</h2>
+                <h3 class="header__cta">İçindeki şefi özgür bırak...</h3>
+            </div>
+            <div class="mobile-assets">
+                <span class="mobile-assets__text">Mobil uygulamamız ile her yerden erişim sağlayın!</span>
+                <div class="asset-holder">
+                    <span>asset-1</span>
+                    <span>asset-2</span>
+                </div>
+            </div>
+        </div>
+        <div class="content-holder">
+            <div class="link-legal">
+                <ul class="footer__link-list">
+                    <li><a href="#">Tarifler</a></li>
+                    <li><a href="#">Menüler</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Mutfak İpuçları</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+                <ul class="footer__legal-list">
+                    <li><a href="#">Yasal Uyarı</a></li>
+                    <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="#">Bilgi Toplumu Hizmetleri</a></li>
+                    <li><a href="#">Kullanım Şartları ve Gizlilik</a></li>
+                </ul>
+            </div>
+            <div class="in-contact">
+                <span class="contact__text">Bizden haberdar olmak ister misiniz?</span class="in-contact__text">
+                <form action="#" class="contact__form">
+                    <div class="form-group">
+                        <input type="text" class="contact__input" placeholder="Mail adresinizi yazınız">
+                        <button class="slide-btn slide-btn__btn-right card-carousel__btn footer__btn">
+                            <svg class="arr-icon-slide">
+                                <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

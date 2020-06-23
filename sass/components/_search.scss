@@ -1,16 +1,20 @@
 .search {
     display: flex;
-    border-radius: 4rem;
     overflow: hidden;
-    flex: 0 0 30%;
 
     &__input {
         border: none;
-        padding: 1.5rem;
+        padding: 1.75rem 3rem;
         width: 100%;
         background-color: $color-grey-primary;
+        border-radius: 4rem;
         font-size: 1.2rem;
-        margin-right: -3.25rem;
+        margin-right: -4.25rem;
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
     }
 
     .search__btn {
@@ -27,11 +31,5 @@
             width: 2rem;
             height: 2rem;
         }
-    }
-
-    &:focus,
-    &:visited {
-        color: inherit;
-        outline: none;
     }
 }
