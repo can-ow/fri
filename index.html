@@ -63,7 +63,7 @@
         <div class="bulletin">
             <div class="gallery">
                 <div class="gallery__content">
-                    <h1 class="gallery__heading">Mükemmel Menülerin sırları</h1>
+                    <h1 class="gallery__heading">Mükemmel menülerin sırları</h1>
                     <button class="gallery__btn btn">Devamı</button>
                     <div class="gallery__radio-container">
                         <div class="gallery__radio-btn radio-box">
@@ -252,7 +252,16 @@
             </div>
         </div>
     </div>
-    <div class="on-mobile">On Mobile</div>
+    <div class="on-mobile">
+        <div class="on-mobile__content-holder">
+            <h2 class="on-mobile__header">fri mobil</h2>
+            <p class="on-mobile__cta">Birbirinden lezzetli binlerce yemek tarifi <br> artık cebinde, hatta kapında!</p>
+            <div class="on-mobile__asset-holder">
+                <span>asset-1</span>
+                <span>asset-2</span>
+            </div>
+        </div>
+    </div>
     <div class="fastest card-carousel">
         <div class="main-heading card-carousel__heading">
             <h2 class="main-heading__text fastest__heading">Bi Çırpıda</h2>
@@ -362,14 +371,14 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="header-holder">
-            <div class="header">
+        <div class="footer__header-holder">
+            <div class="footer__header">
                 <h2 class="header__heading">fri</h2>
                 <h3 class="header__cta">İçindeki şefi özgür bırak...</h3>
             </div>
-            <div class="mobile-assets">
+            <div class="footer__mobile-assets">
                 <span class="mobile-assets__text">Mobil uygulamamız ile her yerden erişim sağlayın!</span>
-                <div class="asset-holder">
+                <div class="footer__asset-holder">
                     <span>asset-1</span>
                     <span>asset-2</span>
                 </div>
@@ -394,15 +403,45 @@
             <div class="in-contact">
                 <span class="contact__text">Bizden haberdar olmak ister misiniz?</span class="in-contact__text">
                 <form action="#" class="contact__form">
-                    <div class="form-group">
+                    <div class="form-group footer__form-group">
                         <input type="text" class="contact__input" placeholder="Mail adresinizi yazınız">
-                        <button class="slide-btn slide-btn__btn-right card-carousel__btn footer__btn">
-                            <svg class="arr-icon-slide">
+                        <button class="footer__btn">
+                            <svg class="footer__arr-icon">
                                 <use xlink:href="images/sprite.svg#icon-arrow-right2"></use>
                             </svg>
                         </button>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="social-holder">
+            <div class="social__links">
+                <button class="social__btn">
+                    <svg class="social__icon">
+                        <use xlink:href="images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </button>
+                <button class="social__btn">
+                    <svg class="social__icon">
+                        <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                    </svg>
+                </button>
+                <button class="social__btn">
+                    <svg class="social__icon">
+                        <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </button>
+                <button class="social__btn">
+                    <svg class="social__icon">
+                        <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="copyright">
+                <span class="copyright__text">Tüm hakları saklıdır. &copy; 2020 Fri Yemek Tarifleri.</span>
+            </div>
+            <div class="design">
+                <span class="design__text">Design by <a href="">Fol</a></span>
             </div>
         </div>
     </footer>

@@ -1,15 +1,20 @@
 .footer {
     padding: 3rem $body-padding;
+    padding-bottom: 0;
     background-color: $color-green-dark;
     color: $color-white;
 
-    .header-holder {
+    & > * {
+        padding: 4rem 0;
+    }
+
+    .footer__header-holder {
         padding: 6rem 0;
         display: flex;
         border-bottom: $border-bottom;
     }
 
-    .header {
+    .footer__header {
         flex: 1;
 
         h2 {
@@ -21,20 +26,19 @@
         }
     }
 
-    .mobile-assets {
+    .footer__mobile-assets {
 
         .mobile-assets__text {
             font-size: 1.9rem;
         }
 
-        .asset-holder {
+        .footer__asset-holder {
             margin-top: 2rem;
             text-align: end;
         }
     }
 
     .content-holder {
-        padding: 4rem 0;
         border-bottom: $border-bottom;
 
         display: flex;
@@ -100,10 +104,75 @@
     }
 
     .contact__text {
+        display: block;
         font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer__form-group {
+        display: flex;
+        align-items: center;
     }
 
     .contact__input {
+        background-color: transparent;
+        border: 1px solid $color-grey-secondary;
+        border-radius: 4rem;
+        color: $color-grey-secondary;
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 2rem 3rem;
+        margin-right: -5rem;
         width: 100%;
+    }
+
+    .footer__btn {
+
+        &,
+        &:focus,
+        &:visited {
+            padding: 1rem;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+    }
+
+    .footer__arr-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: $color-grey-secondary;
+    }
+
+    .social-holder {
+        display: flex;
+        align-items: center;
+        color: $color-grey-primary;
+        font-size: 1.2rem;
+    }
+
+    .social__links {
+        margin-right: 5rem;
+
+        & > *:not(:last-child) {
+            margin-right: 1.4rem;
+        }
+    }
+
+    .copyright {
+        margin-right: auto;
+
+        .copyright__text {
+        }
+    }
+
+    .design {
+
+        a,
+        a:link,
+        a:focus {
+            text-decoration: underline;
+            color: inherit;
+        }
     }
 }

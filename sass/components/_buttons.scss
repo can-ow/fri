@@ -1,3 +1,12 @@
+button {
+    &,
+    &:active,
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
 .btn {
     border-radius: $border-radius-small;
     font-size: 1.5rem;
@@ -54,4 +63,17 @@
 
 .radio-btn {
     
+}
+
+.social__btn {
+    background: linear-gradient(rgba(black, 0.6),rgba(black, 0.6));
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4rem;
+
+    .social__icon {
+        fill: $color-grey-primary;
+        width: 1.75rem;
+        height: 1.75rem;
+    }
 }
